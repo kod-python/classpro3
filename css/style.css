@@ -72,6 +72,23 @@ section{
     pointer-events: none;
 }
 
+
+.header .logo{
+    color: var(--main-color);
+    font-size: 2.3rem;
+}
+
+.header .logo i{
+    padding-left: 1rem;
+}
+
+
+.header .nav-bar a{
+    margin: 0 1rem;
+    color: var(--main-color);
+    font-size: 1.7rem;
+}
+
 .heading span{
     position: absolute;
     width: 100%;
