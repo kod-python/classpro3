@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Oxygen:wght@700&display=swap');
+
+
+
+
+
+/* cs  variables */
+:root{
+    --main-color:#443;
+    /* vertical and horizontal */
+    --border-radius:95% 4% 97% 5% / 4% 94% 3% 95%;
+    --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
+    --border: .2rem solid var(--main-color)
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Agbalumos oxygen;
+    text-decoration: none;
+    ;outline: none;
+    border: none;
+
+    text-transform: capitalize;
+    transition: all 2s linear;
+}
+
+
+html{
+    /* trick to make font sizing easier */
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+
+}
+
+/* for all sections */
+section{
+    padding: 2rem 9%;
+}
+
+/* header code starts here */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    right: 0;
+    align-items: center;
+    padding: 2rem 9%;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+}
+
+.heading{
+    font-size: 9rem;
+    text-transform: uppercase;
+    color: transparent;
+
+
+    -webkit-text-stroke:0.5rem 
+    var(--main-color);
+
+    letter-spacing: 0.2rem;
+    text-align: center;
+    position: relative;
+    pointer-events: none;
+}
+
+.heading span{
+    position: absolute;
+    width: 100%;
+    color: var(--main-color);
+    font-size: 48px;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
