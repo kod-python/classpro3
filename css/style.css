@@ -10,9 +10,11 @@
     /* vertical and horizontal */
     --border-radius:95% 4% 97% 5% / 4% 94% 3% 95%;
     --border-radius-hover: 4% 95% 6% 95% / 95% 4% 92% 5%;
-    --border: .2rem solid var(--main-color)
+    --border: .2rem solid var(--main-color);
+    --border-hover:0.2rem dotted var(--main-color)
 
 }
+/* css variable ends here */
 
 *{
     margin: 0;
@@ -55,6 +57,7 @@ section{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, 0.1);
+    z-index: 1;
 }
 
 .heading{
@@ -99,4 +102,115 @@ section{
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
+}
+
+.btn{
+    border: var(--border);
+    padding: 0.9rem 1.5rem;
+    border-radius: var(--border-radius);
+    color: var(--main-color);
+}
+
+.btn:hover{
+    border-radius: var(--border-radius-hover);
+    border: var(--border-hover);
+}
+
+/* home section */
+.home{
+    min-height: 100vh;
+    padding: 150px;
+    background-image: url(../image/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.home .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+}
+
+.home .row .content{
+width: 50rem;
+padding-top: 10rem;
+}
+
+.home .row  .content h3{
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: 6.5rem;
+    margin-bottom: 2rem;
+}
+
+.home .row .image{
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding-top: 6rem;
+    text-align: center;
+}
+
+.home .image-slider{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.home .image-slider img{
+    margin-top: 5rem;
+    height: 9rem;
+}
+.home .image-slider img:hover{
+    transform: translateY(-2rem);
+   
+}
+
+.home .row .image img{
+    height: 20rem;
+    animation: move 6s linear infinite;
+    
+}
+@keyframes move{
+    0%, 100%{
+        transform: translateX(0rem) rotate(-10deg);
+    }
+
+    50%{
+        transform: translateX(-7rem) rotate(10deg);
+    }
+}
+
+.about .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.about .row .image{
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about .row image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 42rem;
+}
+
+.about .row .content .title{
+    color: var(--main-color);
+    font-size: 3rem;
+    line-height: 1.8rem;
+}
+
+section{
+    padding: 4% 10%;
 }
