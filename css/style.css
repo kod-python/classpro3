@@ -66,7 +66,7 @@ section{
     color: transparent;
 
 
-    -webkit-text-stroke:0.5rem 
+    -webkit-text-stroke:0.05rem 
     var(--main-color);
 
     letter-spacing: 0.2rem;
@@ -213,4 +213,107 @@ padding-top: 10rem;
 
 section{
     padding: 4% 10%;
+}
+
+.about .row .content p{
+    color: var(--main-color);
+    display: none;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.about .row .content .btn{
+    margin: 2rem 0;
+}
+
+.about .row .content .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem,1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+
+.about .row .content .icons-container .icons{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    text-align: center;
+}
+
+/* menu */
+.menu{
+    background: url(../image/menu-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.menu .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu .box-container .box{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    gap: 1.5rem;
+    margin-left: 5rem;
+    align-items: center;
+    flex: 1 1 42;
+    display: flex;
+    padding: 3rem;
+}
+
+.meun .box-container .box img{
+    height: 10rem;
+}
+
+
+.meun .box-container .box h3{
+    font-size: 3rem;
+}
+
+.meun .box-container .box p{
+    font-size: ;
+}
+
+/* menu ends here */
+
+.review .review-slider{
+    padding: 10rem 0;
+}
+
+.review .review-slider .box{
+    border: var(--border);
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 3rem 0;
+
+}
+
+
+.review .review-slider .box .fa-quote-left{
+    z-index: 1;
+    color: #443;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    font-size: 15rem;
+}
+
+
+.review .review-slider .box .fa-quote-right{
+    z-index: 1;
+    color: #443;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    font-size: 15rem;
+}
+
+.review .review-slider .box img{
+
 }
